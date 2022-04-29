@@ -15,3 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/',[StudentController::class,'index']);
+Route::get('/create',[StudentController::class,'show']);
+Route::post('/createStudent',[StudentController::class,'create']);
