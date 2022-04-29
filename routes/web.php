@@ -17,3 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/',[StudentController::class,'index']);
 Route::get('/create',[StudentController::class,'show']);
 Route::post('/createStudent',[StudentController::class,'create']);
+
+Route::get('/edit/{student}',[StudentController::class,'edit']);
+Route::post('/editStudent/{student}',[StudentController::class,'editing']);
+
+Route::get('/delete/{student}',[StudentController::class,'destroy']);
+
+Route::get('/details/{student}',[StudentController::class,'detail']);

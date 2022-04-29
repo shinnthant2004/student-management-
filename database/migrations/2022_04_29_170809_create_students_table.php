@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('CNE')->nullable();
             $table->string('firstname')->nullable();
             $table->string('lastname')->nullable();
+            $table->string('age')->nullable();
             $table->string('speciality')->nullable();
             $table->timestamps();
         });
